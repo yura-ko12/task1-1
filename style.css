@@ -1,0 +1,390 @@
+body{
+  margin: 0;
+  position: relative;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+h1,h2{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+}
+
+a:hover{
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+/*header*/
+
+header{
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.header-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 36px;
+  max-width: 100%;
+  
+}
+
+.header-logo img{
+  height: 20px;
+  
+}
+
+.header-lists{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.header-lists ul{
+  display: flex;
+}
+
+.header-lists li{
+  margin-right: 45px;
+}
+
+.header-lists{
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+span:first-child{
+  font-weight: bold;
+}
+
+span{
+  display: block;
+  color: black;
+}
+
+.hamburger-menu {
+  width: 35px;
+  height: 32px;
+  position: relative;
+  display: none;
+  
+}
+
+.hamburger-bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  background: #000;
+  border-radius: 2px;
+}
+
+.hamburger-bar:nth-child(1) {
+  top: 8%;
+}
+
+.hamburger-bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-bar:nth-child(3) {
+  top: 92%;
+  transform: translateY(-100%);
+}
+
+button {
+  border-color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+header .counseling {
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  
+}
+
+.counseling {
+  background-color: #f79214;
+  color: white;
+  margin-right: 30px;
+}
+
+.document{
+  background-color: white;
+  color: black;
+}
+
+/*top-wrapper*/
+
+
+
+.top-wrapper{
+  background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.background-img-smartphone{
+  display: none;
+}
+
+
+.top-wrapper h1{
+  font-size: 38px;
+  line-height: 54px;
+  margin-bottom: 15px;
+}
+
+.top-wrapper-container{
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 90px 50px 20px;
+}
+
+.contents{
+  text-align: center;
+  width: fit-content;
+  
+}
+
+.points{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.top-wrapper-link {
+  display: flex;
+  font-size: 15px;
+  padding: 10px 20px 10px;
+  margin-bottom: 20px;
+  
+}
+
+.top-wrapper-link a{
+  height: 64px;
+  border-radius: 38px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.top-wrapper-link a:first-child{
+  width: 306px;
+  box-sizing: border-box;
+}
+
+.top-wrapper-link a:last-child{
+  width: 176px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+
+.anotate p{
+  color: rgb(162,162,162);
+  font-size: 12px;
+  margin: 0;
+}
+
+
+
+
+
+/*message-wrapper*/
+
+.message-wrapper{
+  background-color: #f79214;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.message-wrapper-container{
+  display: flex;
+  align-items: center;
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+video{
+  width: 50%;
+}
+
+.about{
+  margin-left: 20px;
+  width: 50%;
+}
+
+h2{
+  font-size: 38px;
+  letter-spacing: .1em;
+  line-height: 54px;
+}
+
+.about p{
+  font-size: 16px;
+}
+
+.message-wrapper a{
+  color: white;
+  display: flex;
+  font-size: 18px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 1080px){
+  /*タブレットサイズ*/
+.header-lists{
+  display: none;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.hamburger-menu {
+  display: block;
+}
+
+.header-container{
+  margin: 0 36px;
+}
+
+
+.message-wrapper-container{
+  display: flex;
+  flex-direction: column;
+}
+
+video{
+  width: 75%;
+  margin-bottom: 16px;
+}
+
+.about{
+  width: 75%;
+  text-align: left;
+}
+  
+}
+
+
+@media screen and (max-width: 767px){
+  /*スマホサイズ*/
+.header-logo img{
+  height: 16px;
+}
+  
+.top-wrapper h1{
+  font-size: 25px;
+  line-height: 36px;
+  margin-left: calc(((100vw - 100%)/2)*-1);
+  margin-right: calc(((100vw - 100%)/2)*-1);
+}
+
+.top-wrapper{
+  background-image: none;
+}
+
+.background-img-smartphone{
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+.top-wrapper-container{
+  font-size: 25px;
+  text-align: center;
+  margin-left: calc(((100vw - 100%)/2)*-1);
+  margin-right: calc(((100vw - 100%)/2)*-1);
+}
+
+.contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -60vw;
+}
+
+.points{
+ max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.points img{
+  width: 27.5%;
+}
+
+.points img:nth-child(2){
+  width: 40%;
+}
+
+.top-wrapper-link{
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.top-wrapper-link a:first-child{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.top-wrapper-link a:last-child{
+  display: none;
+}
+
+.anotate{
+  text-align: left;
+}
+
+video{
+  width: 100%;
+}
+
+.about{
+  width: 100%;
+}
+
+  
+}
