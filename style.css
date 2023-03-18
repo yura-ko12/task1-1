@@ -28,8 +28,8 @@ a:hover{
 
 header{
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: absolute;
   width: 100%;
   top: 0;
@@ -140,7 +140,7 @@ header .counseling {
 
 
 .top-wrapper{
-  background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
   background-size: cover;
   background-position: center;
 }
